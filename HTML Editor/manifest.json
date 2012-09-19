@@ -1,0 +1,16 @@
+{
+  "name": "HTML Editor",
+  "description": "Live HTML Editor for Chrome",
+  "manifest_version": 2,
+  "version": "1",
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "app": {
+    "launch": {
+				"local_path": "index.html"
+			}
+	}
+}

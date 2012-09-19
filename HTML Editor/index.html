@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html manifest="editor.appcache">
+	<head>
+		<title>code editor</title>
+		<link rel="stylesheet" href="js/codemirror/codemirror.css">
+		<script src="js/codemirror/codemirror.js"></script>
+		<script src="js/codemirror/mode/xml.js"></script>
+		<script src="js/codemirror/mode/javascript.js"></script>
+		<script src="js/codemirror/mode/css.js"></script>
+		<script src="js/codemirror/mode/htmlmixed.js"></script>
+		<script src="js/rawinflate.js"></script>
+		<script src="js/rawdeflate.js"></script>
+		<style>
+			@font-face {
+				font-family: 'inconsolata';
+				src: url('files/inconsolata.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			body {
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			.button {
+				font-family: Arial;
+				font-size: 10px;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				color: rgba(0,0,0,0.5);
+				border: 1px solid rgba(0,0,0,0.25);
+				background-color: rgba(0,0,0,0);
+
+				margin: 2px;
+				padding: 8px 10px;
+
+				cursor: pointer;
+			}
+
+			.button:hover {
+				color: rgba(255,255,255,0.75);
+				background-color: rgba(0,0,0,0.75);
+			}
+
+			input {
+				cursor: pointer;
+			}
+
+			/**/
+
+			.CodeMirror {
+				font-family: inconsolata;
+				background-color: rgba(255,255,255,0.75);
+			}
+
+			.CodeMirror-scroll {
+				height: 100%;
+			}
+
+			div.CodeMirror-selected {
+				background: rgba(0,0,0,0.1);
+			}
+			.CodeMirror-focused div.CodeMirror-selected {
+				background: rgba(0,0,255,0.1);
+			}
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="background.js" ></script>
+	</body>
+</html>

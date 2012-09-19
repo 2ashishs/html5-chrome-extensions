@@ -1,0 +1,2 @@
+ main.load();
+ main.resize();
